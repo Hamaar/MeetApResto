@@ -5,11 +5,7 @@ Pembelajaran pada meetAp untuk membuat aplikasi resto menggunakan java
 Berikut langkah-langkahnya secara singkat:
 
 1. Tekan icon Fork
-2. Buatlah *branch* fitur baru: `git checkout -b namabranchyangdiinginkan`
-3. *Commit* perubahannya: `git commit -am 'Add nambah beberapa fitur'`
-4. *Push* ke branch di *remote*: `git push origin namabranchyangdiinginkan`
-5. Buat *pull request*
-6. Setelah selesai fork, maka repository akan masuk ke daftar repo milik anda.
+2. Setelah selesai fork, maka repository akan masuk ke daftar repo milik anda.
 
 ----
 ## Mari Mulai Berkontribusi ;)
@@ -22,7 +18,7 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
     Contoh:
     
-        git clone git@github.com/Hamaar/MeetApResto.git
+        git clone https://github.com/Hamaar/MeetApResto.git
 
 2. Untuk mempermudah pengembangan, hendaknya kita menambahkan repository pusat dengan lokal milik kita agar tidak terjadi konflik dengan kontributor lainnya.
 
@@ -32,7 +28,7 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
         git remote add upstream git://github.com/Hamaar/MeetApResto.git
 
-3. Setelah remote repositori selesai, buatlah branch baru agar tidak merusak history branch utama, dan juga untuk memudahkan racking code.
+3. Setelah remote repositori selesai, buatlah branch baru agar tidak merusak history branch utama, dan juga untuk memudahkan tracking code.
 
         git checkout -b <nama-cabang>
 
@@ -63,7 +59,7 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
         git checkout sample-project
 
-9. Setelah itu, kita gabungkan cabang tersebut dengan cabang utama, sehingga kontribusi dapat dikirimkan kembali ke repositori pusat milik neokree, Material Tabs android library, dengan perintah `git rebase <nama-branch>`.
+9. Setelah itu, kita gabungkan cabang tersebut dengan cabang utama, sehingga kontribusi dapat dikirimkan kembali ke repositori pusat milik hamaar, dengan perintah `git rebase <nama-branch>`.
 
         git rebase master
 
