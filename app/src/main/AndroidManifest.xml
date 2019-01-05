@@ -24,6 +24,11 @@
         <activity android:name=".Activity.DetailMenuActivity" />
         <activity android:name=".Activity.MenuListActivity" />
         <activity android:name=".Activity.InsertMenuActivity"></activity>
+        <activity
+            android:name=".ImagePicker.HiddenActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
     </application>
 
 </manifest>

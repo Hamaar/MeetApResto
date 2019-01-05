@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mRuntimePermission = new AppPermissions(this);
 
         if (mRuntimePermission.hasPermission(ALL_PERMISSIONS)) {
-            GlobalHelper.CreateFolder();
+            GlobalHelper.createFolder();
         }else{
             mRuntimePermission.requestPermission(this, ALL_PERMISSIONS, ALL_REQUEST_CODE);
         }
@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         btnAllOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), getString(R.string.on_development), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MenuListActivity.class);
+                startActivity(intent);
             }
 
 
