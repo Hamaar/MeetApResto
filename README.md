@@ -14,7 +14,7 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
 1. Cloning project yang sudah anda fork ke akun anda
 
-        git clone <alamat-repo>
+        git clone <alamat-repo-milik-sendiri>
 
     Contoh:
     
@@ -22,7 +22,7 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
 2. Untuk mempermudah pengembangan, hendaknya kita menambahkan repository pusat dengan lokal milik kita agar tidak terjadi konflik dengan kontributor lainnya.
 
-        git remote add <nama-repo> <alamat-repo>
+        git remote add <nama-repo-milik-sendiri> <alamat-repo-milik sendiri>
 
     Contoh:
 
@@ -30,11 +30,11 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
 
 3. Setelah remote repositori selesai, buatlah branch baru agar tidak merusak history branch utama, dan juga untuk memudahkan tracking code.
 
-        git checkout -b <nama-cabang>
+        git checkout -b <nama-cabang(branch yang diinginkan)>
 
     Contoh:
 
-        git checkout -b sample-project
+        git checkout -b sebutsaja-mawar
 
 4. Di cabang baru ini lah kita akan untuk melakukan perubahan kode, yang nantinya bisa kita push ke repo pusat. Untuk berpindah branch bisa kita gunakan `git checkout <nama-cabang>`, dimana `<nama-cabang>` adalah nama yang anda gunakan pada langkah sebelumnya.
 
@@ -55,9 +55,9 @@ NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
         git fetch upstream
         git merge upstream/master
 
-8. Dengan proses diatas, setidaknya kita telah bisa memastikan bahwa tidak ada konflik dengan repo pusat. Sekarang kita kembali ke branch lokal development kita `sample-project`.
+8. Dengan proses diatas, setidaknya kita telah bisa memastikan bahwa tidak ada konflik dengan repo pusat. Sekarang kita kembali ke branch lokal development kita `sebutsaja-mawar`.
 
-        git checkout sample-project
+        git checkout sebutsaja-mawar
 
 9. Setelah itu, kita gabungkan cabang tersebut dengan cabang utama, sehingga kontribusi dapat dikirimkan kembali ke repositori pusat milik hamaar, dengan perintah `git rebase <nama-branch>`.
 
